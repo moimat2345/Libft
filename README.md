@@ -2,43 +2,47 @@
   <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/covers/cover-libft-bonus.png" alt="libft" />
 </div>
 
-# Libft - Ma Première Bibliothèque C
+# Libft - My First C Library
 
-Le projet `Libft` est le premier projet du cursus 42. Il consiste à recoder **42 fonctions** de la bibliothèque standard C, organisées en 3 parties : fonctions libc, fonctions utilitaires et fonctions bonus pour listes chaînées.
+The `Libft` project is the first project of the 42 curriculum. It consists of recoding **42 functions** from the standard C library, organized in 3 parts: libc functions, utility functions, and bonus functions for linked lists.
 
-## Statut
+## Status
 <div align="center">
 
 ![42 Bangkok](https://img.shields.io/badge/42-Bangkok-000000?style=for-the-badge&logo=42&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Norminette](https://img.shields.io/badge/Norminette-passing-success?style=for-the-badge)
 
-[![English](https://img.shields.io/badge/🇬🇧_English-Click_here-red?style=for-the-badge)](README.en.md)
+<br>
+
+### 🌍 Language / Langue
+
+[![Français](https://img.shields.io/badge/🇫🇷_Lire_en_Français-blue?style=for-the-badge&logoColor=white)](README.fr.md)
 
 </div>
 
 ---
 
-## Vue d'ensemble
+## Overview
 
-**Libft** permet de créer sa propre bibliothèque de fonctions C réutilisables pour tous les projets futurs du cursus 42. Ce projet renforce la compréhension des structures de données et des algorithmes de base.
+**Libft** allows you to create your own library of reusable C functions for all future 42 curriculum projects. This project strengthens understanding of data structures and basic algorithms.
 
-### Ce que j'ai implémenté :
-- ✅ **22 fonctions** de la libc (Partie 1)
-- ✅ **11 fonctions** utilitaires (Partie 2)
-- ✅ **9 fonctions** bonus pour listes chaînées
+### What I implemented:
+- ✅ **22 libc functions** (Part 1)
+- ✅ **11 utility functions** (Part 2)
+- ✅ **9 bonus functions** for linked lists
 
 ---
 
-## 📋 Partie Obligatoire
+## 📋 Mandatory Part
 
 <table>
   <tr>
-    <th>Nom du programme</th>
+    <th>Program name</th>
     <td>libft.a</td>
   </tr>
   <tr>
-    <th>Fichiers à rendre</th>
+    <th>Turn in files</th>
     <td>Makefile, libft.h, *.c</td>
   </tr>
   <tr>
@@ -46,106 +50,106 @@ Le projet `Libft` est le premier projet du cursus 42. Il consiste à recoder **4
     <td>all, clean, fclean, re, bonus</td>
   </tr>
   <tr>
-    <th>Fonctions externes</th>
+    <th>External functs.</th>
     <td>malloc, free, write</td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>Coder une bibliothèque de fonctions C utiles pour les projets 42</td>
+    <td>Code a C library of useful functions for 42 projects</td>
   </tr>
 </table>
 
-### Règles importantes
-- Les variables globales sont interdites.
-- Compilation avec les flags `-Wall -Wextra -Werror`.
-- Pas de segfault, bus error, double free, etc.
-- Utiliser `ar` pour créer la bibliothèque statique.
+### Important Rules
+- Global variables are forbidden.
+- Compilation with the flags `-Wall -Wextra -Werror`.
+- No segfault, bus error, double free, etc.
+- Use `ar` to create the static library.
 
 ---
 
-## 📂 Structure du Projet
+## 📂 Project Structure
 
 ```
 Libft/
 ├── 📄 Makefile              # Compilation → libft.a
 │
 ├── 📁 include/              # Headers
-│   └── libft.h              # Prototypes de toutes les fonctions
+│   └── libft.h              # All function prototypes
 │
-└── 📁 src/                  # Sources (42 fonctions)
-    ├── Partie 1 (22 fonctions libc)
-    ├── Partie 2 (11 fonctions utilitaires)
-    └── Bonus (9 fonctions listes chaînées)
+└── 📁 src/                  # Sources (42 functions)
+    ├── Part 1 (22 libc functions)
+    ├── Part 2 (11 utility functions)
+    └── Bonus (9 linked list functions)
 ```
 
 ---
 
-## 🎯 Fonctions Implémentées
+## 🎯 Implemented Functions
 
-### Partie 1 : Fonctions libc (22 fonctions)
+### Part 1: Libc functions (22 functions)
 
 <details>
-<summary><b>Cliquez pour voir les fonctions</b></summary>
+<summary><b>Click to see functions</b></summary>
 
 #### Tests & Conversions
-- `ft_atoi` - Convertit une chaîne en entier
-- `ft_isalpha` - Teste si c'est un caractère alphabétique
-- `ft_isdigit` - Teste si c'est un chiffre
-- `ft_isalnum` - Teste si c'est alphanumérique
-- `ft_isascii` - Teste si c'est un caractère ASCII
-- `ft_isprint` - Teste si c'est un caractère imprimable
-- `ft_tolower` - Convertit en minuscule
-- `ft_toupper` - Convertit en majuscule
+- `ft_atoi` - Convert string to integer
+- `ft_isalpha` - Test if alphabetic character
+- `ft_isdigit` - Test if digit
+- `ft_isalnum` - Test if alphanumeric
+- `ft_isascii` - Test if ASCII character
+- `ft_isprint` - Test if printable character
+- `ft_tolower` - Convert to lowercase
+- `ft_toupper` - Convert to uppercase
 
-#### Manipulation Mémoire
-- `ft_bzero` - Met une zone mémoire à zéro
-- `ft_memset` - Remplit une zone mémoire
-- `ft_memcpy` - Copie une zone mémoire
-- `ft_memmove` - Copie mémoire (overlap-safe)
-- `ft_memchr` - Recherche un octet en mémoire
-- `ft_memcmp` - Compare deux zones mémoires
+#### Memory Manipulation
+- `ft_bzero` - Set memory area to zero
+- `ft_memset` - Fill memory area
+- `ft_memcpy` - Copy memory area
+- `ft_memmove` - Copy memory (overlap-safe)
+- `ft_memchr` - Search byte in memory
+- `ft_memcmp` - Compare two memory areas
 
-#### Manipulation Strings
-- `ft_strlen` - Calcule la longueur d'une chaîne
-- `ft_strchr` - Recherche un caractère dans une chaîne
-- `ft_strrchr` - Recherche un caractère (depuis la fin)
-- `ft_strncmp` - Compare n caractères de deux chaînes
-- `ft_strnstr` - Recherche une sous-chaîne
-- `ft_strlcpy` - Copie sécurisée de chaîne
-- `ft_strlcat` - Concaténation sécurisée
-- `ft_strdup` - Duplique une chaîne
-- `ft_calloc` - Allocation mémoire initialisée à 0
+#### String Manipulation
+- `ft_strlen` - Calculate string length
+- `ft_strchr` - Search character in string
+- `ft_strrchr` - Search character (from end)
+- `ft_strncmp` - Compare n characters of two strings
+- `ft_strnstr` - Search substring
+- `ft_strlcpy` - Safe string copy
+- `ft_strlcat` - Safe concatenation
+- `ft_strdup` - Duplicate string
+- `ft_calloc` - Memory allocation initialized to 0
 
 </details>
 
-### Partie 2 : Fonctions utilitaires (11 fonctions)
+### Part 2: Utility functions (11 functions)
 
 <details>
-<summary><b>Cliquez pour voir les fonctions</b></summary>
+<summary><b>Click to see functions</b></summary>
 
-#### Allocation & Manipulation Strings
-- `ft_substr` - Extrait une sous-chaîne
-- `ft_strjoin` - Concatène deux chaînes
-- `ft_strtrim` - Supprime des caractères en début/fin
-- `ft_split` - Découpe une chaîne selon un délimiteur
-- `ft_itoa` - Convertit un int en string
+#### Allocation & String Manipulation
+- `ft_substr` - Extract substring
+- `ft_strjoin` - Concatenate two strings
+- `ft_strtrim` - Remove characters at start/end
+- `ft_split` - Split string by delimiter
+- `ft_itoa` - Convert int to string
 
 #### Map & Iteration
-- `ft_strmapi` - Applique une fonction sur chaque caractère
-- `ft_striteri` - Itère sur une chaîne avec une fonction
+- `ft_strmapi` - Apply function on each character
+- `ft_striteri` - Iterate on string with function
 
-#### Output File Descriptor
-- `ft_putchar_fd` - Affiche un caractère sur un fd
-- `ft_putstr_fd` - Affiche une chaîne sur un fd
-- `ft_putendl_fd` - Affiche une chaîne + newline sur un fd
-- `ft_putnbr_fd` - Affiche un int sur un fd
+#### File Descriptor Output
+- `ft_putchar_fd` - Print character to fd
+- `ft_putstr_fd` - Print string to fd
+- `ft_putendl_fd` - Print string + newline to fd
+- `ft_putnbr_fd` - Print int to fd
 
 </details>
 
-### Bonus : Listes chaînées (9 fonctions)
+### Bonus: Linked lists (9 functions)
 
 <details>
-<summary><b>Cliquez pour voir les fonctions</b></summary>
+<summary><b>Click to see functions</b></summary>
 
 #### Structure
 ```c
@@ -155,61 +159,61 @@ typedef struct s_list {
 } t_list;
 ```
 
-#### Fonctions
-- `ft_lstnew` - Crée un nouveau nœud
-- `ft_lstadd_front` - Ajoute un nœud au début
-- `ft_lstadd_back` - Ajoute un nœud à la fin
-- `ft_lstsize` - Compte le nombre de nœuds
-- `ft_lstlast` - Retourne le dernier nœud
-- `ft_lstdelone` - Supprime un nœud
-- `ft_lstclear` - Supprime toute la liste
-- `ft_lstiter` - Itère sur la liste
-- `ft_lstmap` - Applique une fonction et crée une nouvelle liste
+#### Functions
+- `ft_lstnew` - Create new node
+- `ft_lstadd_front` - Add node at beginning
+- `ft_lstadd_back` - Add node at end
+- `ft_lstsize` - Count number of nodes
+- `ft_lstlast` - Return last node
+- `ft_lstdelone` - Delete one node
+- `ft_lstclear` - Delete entire list
+- `ft_lstiter` - Iterate on list
+- `ft_lstmap` - Apply function and create new list
 
 </details>
 
 ---
 
-## 🛠️ Compilation et Utilisation
+## 🛠️ Compilation and Usage
 
-### Compiler la bibliothèque
+### Compile the Library
 
 ```bash
-# Compiler la partie obligatoire
+# Compile mandatory part
 make
 
-# Compiler avec les bonus
+# Compile with bonus
 make bonus
 
-# Nettoyer les fichiers objets
+# Clean object files
 make clean
 
-# Tout nettoyer
+# Clean everything
 make fclean
 
-# Recompiler complètement
+# Recompile completely
 make re
 ```
 
-### Utiliser dans votre code
+### Use in Your Code
 
 ```c
 #include "libft.h"
 
 int main(void)
 {
-    // Utiliser ft_split
+    // Use ft_split
     char **words = ft_split("Hello World 42", ' ');
     for (int i = 0; words[i]; i++)
         ft_putendl_fd(words[i], 1);
 
-    // Utiliser ft_itoa
+    // Use ft_itoa
     char *number = ft_itoa(42);
     ft_putstr_fd("Number: ", 1);
     ft_putendl_fd(number, 1);
     free(number);
 
-    // Utiliser les listes chaînées
+    // Use linked lists
     t_list *list = ft_lstnew(ft_strdup("Node 1"));
     ft_lstadd_back(&list, ft_lstnew(ft_strdup("Node 2")));
     ft_lstadd_back(&list, ft_lstnew(ft_strdup("Node 3")));
@@ -218,7 +222,7 @@ int main(void)
 }
 ```
 
-### Compiler avec libft
+### Compile with libft
 
 ```bash
 gcc main.c -L. -lft -I./include -o program
@@ -227,64 +231,64 @@ gcc main.c -L. -lft -I./include -o program
 
 ---
 
-## 💡 Points Clés de l'Implémentation
+## 💡 Implementation Highlights
 
 <details>
-<summary><b>🔹 ft_split - Gestion d'erreurs robuste</b></summary>
+<summary><b>🔹 ft_split - Robust Error Handling</b></summary>
 
-La fonction `ft_split` utilise plusieurs fonctions internes pour découper une chaîne :
-- `count_word()` - Compte le nombre de mots
-- `when_next_sep()` - Trouve le prochain séparateur
-- `add_in_tab()` - Ajoute le mot dans le tableau avec gestion malloc
+The `ft_split` function uses several internal functions to split a string:
+- `count_word()` - Count number of words
+- `when_next_sep()` - Find next separator
+- `add_in_tab()` - Add word to array with malloc handling
 
-En cas d'échec d'allocation, toute la mémoire déjà allouée est libérée.
+In case of allocation failure, all previously allocated memory is freed.
 
 </details>
 
 <details>
 <summary><b>🔹 ft_memmove - Overlap-Safe</b></summary>
 
-Gère correctement les zones mémoire qui se chevauchent :
+Correctly handles overlapping memory areas:
 ```c
 if (dest > src)
-    // Copie de la fin vers le début
+    // Copy from end to start
 else
-    // Copie du début vers la fin
+    // Copy from start to end
 ```
 
 </details>
 
 <details>
-<summary><b>🔹 ft_lstmap - Nettoyage automatique</b></summary>
+<summary><b>🔹 ft_lstmap - Automatic Cleanup</b></summary>
 
-En cas d'échec lors de la création d'un nouveau nœud, la fonction nettoie automatiquement tous les nœuds déjà créés pour éviter les fuites mémoire.
+In case of failure when creating a new node, the function automatically cleans up all previously created nodes to avoid memory leaks.
 
 </details>
 
 ---
 
-## 📊 Statistiques
+## 📊 Statistics
 
 <div align="center">
 
-| Métrique | Valeur |
-|:--------:|:------:|
-| **Fonctions** | 42 |
-| **Fichiers .c** | 43 |
-| **Lignes** | ~2000+ |
-| **Bonus** | ✅ Complet |
+| Metric | Value |
+|:------:|:-----:|
+| **Functions** | 42 |
+| **Files .c** | 43 |
+| **Lines** | ~2000+ |
+| **Bonus** | ✅ Complete |
 
 </div>
 
 ---
 
-## 🚨 Avertissement
-
-**🇫🇷 Ce projet a un but éducatif et vous ne devez en aucun cas faire du copier-coller.**
-**Tricher c'est mal. Ne trichez pas.**
+## 🚨 Disclaimer
 
 **🇬🇧 This project has an educational purpose and you should under no circumstances copy and paste.**
 **Cheat is bad. Don't cheat.**
+
+**🇫🇷 Ce projet a un but éducatif et vous ne devez en aucun cas faire du copier-coller.**
+**Tricher c'est mal. Ne trichez pas.**
 
 ---
 
@@ -292,6 +296,6 @@ En cas d'échec lors de la création d'un nouveau nœud, la fonction nettoie aut
 
 **Made with ❤️ for 42 Bangkok**
 
-[![Back to top](https://img.shields.io/badge/⬆-Retour_en_haut-blue?style=for-the-badge)](#libft---ma-première-bibliothèque-c)
+[![Back to top](https://img.shields.io/badge/⬆-Back_to_top-red?style=for-the-badge)](#libft---my-first-c-library)
 
 </div>
