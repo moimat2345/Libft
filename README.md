@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="200" src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/libftm.png" alt="libft" />
+  <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/main/covers/cover-libft-bonus.png" alt="libft" />
 </div>
 
 # Libft - Ma Première Bibliothèque C
