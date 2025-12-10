@@ -6,13 +6,13 @@
 /*   By: mateon <mateon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 07:58:09 by mateon            #+#    #+#             */
-/*   Updated: 2025/12/10 09:32:49 by mateon           ###   ########.fr       */
+/*   Updated: 2025/12/10 09:38:27 by mateon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-int	main (void)
+int	main(void)
 {
 	ft_putchar_fd('H', 1);
 	return (0);
